@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Image Gallery</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    padding: 30px 0;
+    font-size: 32px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: #1c1c1c;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.download-btn {
+    display: block;
+    padding: 10px;
+    background: #00c896;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.download-btn:hover {
+    background: #00a77d;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🎨 AI Image Gallery</h1>
+
+<div class="gallery">
+
+<div class="card">
+<img src="images/gambar1.png" alt="AI Image">
+<a class="download-btn" href="images/gambar1.png" download>Download</a>
+</div>
+
+<div class="card">
+<img src="images/gambar2.png" alt="AI Image">
+<a class="download-btn" href="images/gambar2.png" download>Download</a>
+</div>
+
+</div>
+
+</body>
+</html>
